@@ -1,0 +1,18 @@
+[project]
+name = "prompt-miner"
+version = "0.1.0"
+description = "Mine, cluster, and reuse your Claude Code prompts"
+requires-python = ">=3.11"
+dependencies = [
+    "typer[all]>=0.12",
+    "sentence-transformers>=3.0",
+    "scikit-learn>=1.3",
+    "numpy>=1.26",
+]
+
+[project.scripts]
+pm = "prompt_miner.cli:app"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
